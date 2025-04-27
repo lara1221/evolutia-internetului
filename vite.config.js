@@ -1,7 +1,9 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/evolutia-internetului/',
   plugins: [react()],
-})
+  server: {
+    port: 5173, // Schimbă acest port dacă e necesar
+  },
+});
